@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    /* cores */
+    --cor0: #0d448c;
+    --cor1: #f23322;
+    --cor2: #bf3939;
+    --cor3: #f2f2f2;
+    --cor4: #0d0d0d;
+
+    /* fontes */
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-montserrat: 'Montserrat', var(--font-padrao), cursive;
+    --font-openSans: 'Open Sans', var(--font-padrao), cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
+    font-family: var(--font-openSans);
+}
+
+header {
+    display: grid;
+    text-align: center;
+    background-color: var(--cor3);
+}
+
+header nav {
+    background-color: var(--cor0);
+    padding: 4px;
+    position: fixed;
+    width: auto;
+    min-width: 100%;
+    box-shadow: 1px 0px 10px var(--cor4);
+}
+
+header nav a {
+    color: var(--cor3);
+    margin-left: 30px;
+    font-family: var(--font-montserrat);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    font-weight: bold;
+    color: var(--cor1);
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 8px var(--cor4));
+}
+
+header>p {
+    padding-top: 40px;
+    font-family: var(--font-montserrat);
+    text-align: start;
+    padding-left: 30%;
+    font-weight: bold;
+    color: var(--cor4);
+    font-size: 1.2em;
+}
+
+header>h1 {
+    padding-bottom: 20px;
+    font-family: var(--font-montserrat);
+    color: var(--cor4);
+}
+
+.redesSociais {
+    width: 30px;
+    padding-top: 120px;
+}
+
+.redesSociais a {
+    display: grid;
+    margin-top: 40px;
+}
+
+.redesSociais a img {
+    width: 30px;
+}
+
+.redesSociais a:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
+#link_seta {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    margin: auto;
+}
+
+#seta {
+    width: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+main section {
+    margin: auto;
+    min-width: 100%;
+    min-height: 560px;
+}
+
+/*main section#home {}*/
+
+main section#formacao {
+    padding-top: 40px;
+}
+
+main section#certificacao {
+    padding-top: 40px;
+}
+
+footer {
+    background-color: var(--cor4);
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 4px;
+    color: var(--cor1);
+}
